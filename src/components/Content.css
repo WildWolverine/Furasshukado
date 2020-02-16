@@ -1,0 +1,72 @@
+nav{
+    margin: 0 auto;
+    position: relative;
+}
+
+nav:before{
+content: '';
+display: block;
+background: #fdcb6e;
+height: 83px;
+width: 100%;
+position: absolute;
+z-index: -1;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 80px;
+}
+
+ul li{
+    float: left;
+}
+
+ul li a{
+    display: table-cell;
+    height: 80px;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 70px;
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+ul li a:hover{
+    background: #74b9ff;
+}
+
+.content{
+    max-width: 100%;
+    max-height: max-content;
+    margin: 25px;
+    display: flex;
+    float: left;
+    position: absolute;
+    padding-bottom: 100px;
+}
+.content-card{
+    position: relative;
+    background: #74b9ff;
+    width: max-content;
+    height: max-content;
+    margin-right: 25px;
+}
+.card-title{
+   padding: 5px;
+   font-family: 'Heebo', sans-serif;
+   font-size: 18px;
+}
+.word-origin{
+    padding: 5px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+}
+.word-translation{
+    padding: 5px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+}

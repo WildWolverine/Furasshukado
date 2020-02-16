@@ -1,0 +1,10 @@
+.header{
+    width: 500px;
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    font-family: 'Squada One', cursive;
+    margin: 10px;
+}
+
