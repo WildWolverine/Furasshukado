@@ -1,36 +1,38 @@
-import React, {useState} from 'react';
+import React,{useState, forwardRef,useImperativeHandle} from 'react';
+import ReactDOM from 'react-dom'
+import './Modal.css'
+const Modal = forwardRef((props,ref) =>{
+    const[display,setDisplay] = useState(false)
 
-
-  function Modal () {
-    const [display,setDisplay] = useState(true)
-
-   function open(){
+    useImperativeHandle(
+        ref,
+        () => {
+            return {
+               openModal: ()=> open(),
+               close: () => close()
+            }
+            
+            })
+   
+    const open = () =>{
         setDisplay(true)
     }
-
     const close = () =>{
         setDisplay(false)
     }
-
-    if(display){
-        return (
-            <div className='modal'>
-                <div className='modal-dialog'>
-                    <div className='modal-content'>
-                        <div className='modal-header'></div>
-                        <div className='modal-body'>
-                            <h1>scscvscacac</h1>
-                        </div>
-                        <div className='modal-footer'>
-                            <button className='closedModal' onClick={close}>Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          );
-    }
-
-    return null
-  
-}
+   if(display){
+       return ReactDOM.createPortal(<div className='modal'>
+       <div className='modal-dialog'>
+           <div className='modal-content'>
+           <button onClick={close}>close</button>
+                   {props.children}
+               </div>
+           </div>
+       </div>, document.getElementById('modal-root'))
+      
+   }
+   return null
+       
+   })
+    
 export default Modal;
