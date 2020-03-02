@@ -21,11 +21,85 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    min-height: 40%;
-    width: 27%;
+    border-radius: 15px;
+    height: 50%;
+    width: 32%;
     overflow-y: auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.945);
     box-shadow: 0,0,10px rgba(0, 0, 0, 0.25);
     z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
+form{
+    position: absolute;
+    width: 300px;
+    height: max-content;
+    background-color: aqua;
+    border-radius: 7px;
+    padding: 15px;
+    top:40px
+}
+
+.textInput {
+    padding-bottom: 15px;
+}
+.textInput input{
+    width: 250px;
+    height: 35px;
+    border: 1px solid aqua ;
+    border-radius: 7px;
+    padding: 5px;
+}
+.textInput input:focus{
+    border-radius: 4px;
+}
+.addBtn  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addBtn button{
+    width: 120px;
+    height: 60px;
+    letter-spacing: 1px;
+    font-family: 'Heebo', sans-serif;
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
+}
+.btnClose {
+    position: absolute;
+    left: 90%;
+    top: 53px;
+}
+.btnClose button{
+    width: 50px;
+    height: 50px;
+    background-color:transparent;
+    border: none;
+    outline: none;
+    font-size: 50px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+.btnOpen{
+    position: absolute;
+    top: 209px;
+    z-index: 1;
+}
+.btnOpen button{
+    width: 140px;
+    height: 127px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: lighter;
+    cursor: pointer;
+    font-size: 90px;
+    color: #FFFFF6;
+   background-color: #212A80
+}
+
+

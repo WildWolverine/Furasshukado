@@ -2,7 +2,7 @@ import React from 'react'
 import './Content.css'
 function Content() {
     return (
-       <div>
+       <div className='wrap-content'> 
             <nav className='content-title'>  
                <ul>
                    <li> <a href='#'>Мой Словарь</a></li>
@@ -38,7 +38,18 @@ function Content() {
 
             <div className='content-card'>
                 <div className='card-title'>
-                    <h2>Карта 2</h2>
+                    <h2>Карта 3</h2>
+                </div>
+                <div className='word-origin'>
+                    <p>inadvertently</p>
+                </div>
+                <div className= 'word-translation'>
+                    <p>непреднамеренно</p>
+                </div>
+            </div>
+            <div className='content-card'>
+                <div className='card-title'>
+                    <h2>Карта 3</h2>
                 </div>
                 <div className='word-origin'>
                     <p>inadvertently</p>

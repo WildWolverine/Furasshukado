@@ -9,7 +9,7 @@ const Modal = forwardRef((props,ref) =>{
         () => {
             return {
                openModal: ()=> open(),
-               close: () => close()
+               closeModal: () => close()
             }
             
             })
@@ -21,10 +21,13 @@ const Modal = forwardRef((props,ref) =>{
         setDisplay(false)
     }
    if(display){
-       return ReactDOM.createPortal(<div className='modal'>
-       <div className='modal-dialog'>
+       return ReactDOM.createPortal(
+       <div className='modal'>
+       <div className='modal-dialog' >
+         <div className='btnClose'>
+           <button  onClick={close}>+</button>
+         </div>
            <div className='modal-content'>
-           <button onClick={close}>close</button>
                    {props.children}
                </div>
            </div>

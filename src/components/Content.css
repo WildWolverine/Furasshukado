@@ -1,12 +1,16 @@
+
+
 nav{
     margin: 0 auto;
     position: relative;
+    max-width: 100%;
 }
 
 nav:before{
 content: '';
 display: block;
-background: #fdcb6e;
+border-radius: 15px;
+background:#212A9C;
 height: 83px;
 width: 100%;
 position: absolute;
@@ -31,12 +35,14 @@ ul li a{
     text-decoration: none;
     line-height: 70px;
     letter-spacing: 1px;
+    color: #FFFFF6;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
 }
 
 ul li a:hover{
-    background: #74b9ff;
+    background: #212A80;
+    border-radius: 15px;
 }
 
 .content{
@@ -50,24 +56,41 @@ ul li a:hover{
 }
 .content-card{
     position: relative;
-    background: #74b9ff;
+    background: #FFF8FF;
+    border-radius: 12px;
     width: max-content;
     height: max-content;
     margin-right: 25px;
+    left: 140px;
+    border:2px solid #212A80;
+   
+    
     
 }
 .card-title{
    padding: 5px;
    font-family: 'Heebo', sans-serif;
    font-size: 18px;
+   color: #FFFFF6;
+   background-color: #212A80;
+   border-radius: 12px;
+  
 }
 .word-origin{
     padding: 5px;
     font-family: 'Heebo', sans-serif;
     font-size: 20px;
+    color: #FFFFF6;
+    background-color: #212A80;
+    border-radius: 12px;
+   
 }
 .word-translation{
     padding: 5px;
     font-family: 'Heebo', sans-serif;
     font-size: 20px;
+    color: #FFFFF6;
+    background-color: #212A80;
+    border-radius: 12px;
+    
 }
