@@ -46,26 +46,25 @@ ul li a:hover{
 }
 
 .content{
-    max-width: 100%;
-    max-height: max-content;
+    width: 1000px;
+    height: 500px;
     margin: 25px;
-    display: inline-block;
-    
-    position: absolute;
-    padding-bottom: 100px;
-}
-.content-card{
     position: relative;
+    display: inline-block;
+    left: 140px;
+    border: 3px solid #212A80;
+    padding: 10px;
+}
+
+.content-card{
     background: #FFF8FF;
     border-radius: 12px;
     width: max-content;
     height: max-content;
-    margin-right: 25px;
-    left: 140px;
     border:2px solid #212A80;
-   
-    
-    
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 15px;
 }
 .card-title{
    padding: 5px;

@@ -6,9 +6,9 @@ function AxiosGetContent() {
     const [posts, setPosts] = useState([])
     
     
-    useEffect(() => {
+     useEffect(() => {
         
-        axios.get('/1')
+        axios.get("/1")
            .then(res=> {
                const posts = res.data
                setPosts(posts)
@@ -16,7 +16,7 @@ function AxiosGetContent() {
            .catch(err=> console.log(err))
     })
     return (
-        <div>
+        <div className ='insideContent'>
             
              {posts.map(post =>(
                      <div className='content-card'>
