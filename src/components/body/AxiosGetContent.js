@@ -4,6 +4,7 @@ import axios from 'axios'
 function AxiosGetContent() {
     
     const [posts, setPosts] = useState([])
+  
     
     
      useEffect(() => {
@@ -15,6 +16,18 @@ function AxiosGetContent() {
            })
            .catch(err=> console.log(err))
     })
+
+    const deletCard = (cardId) => {
+       if(window.confirm('Вы уверены, что хотите удалить карточку?')){
+           axios.delete("/" + cardId, posts)
+           .then(res => {
+               console.log(res.data)
+           })
+           .catch(err => {
+               console.log(err)
+           })
+       }
+    }
     return (
         <div className ='insideContent'>
             
@@ -22,7 +35,7 @@ function AxiosGetContent() {
                      <div className='content-card'>
                       <div className='content-button'>
                     <button className='edit-card'>edit</button>
-                    <button className='delete-card'>delete</button>
+                    <button className='delete-card' onClick={()=>deletCard(post.id)}>delete</button>
                 </div>
                      <div className='card-title'>
                          <h2 key={post.id}>Карта {post.id}</h2>
