@@ -1,53 +1,68 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect,useRef} from 'react'
 import axios from 'axios'
+import EditCard from './EditCard'
+
 
 function AxiosGetContent() {
     
     const [posts, setPosts] = useState([])
-  
-    
-    
+   
      useEffect(() => {
         
-        axios.get("/1")
+        axios.get(`/${posts.length}`)
            .then(res=> {
-               const posts = res.data
+               let posts = res.data
                setPosts(posts)
            })
            .catch(err=> console.log(err))
-    })
+    },[])
 
     const deletCard = (cardId) => {
        if(window.confirm('Вы уверены, что хотите удалить карточку?')){
            axios.delete("/" + cardId, posts)
            .then(res => {
                console.log(res.data)
+               console.log(res.request)
            })
            .catch(err => {
                console.log(err)
+
            })
        }
     }
+    const addMoreCards = () =>{
+            setPosts(posts.concat(posts))
+    }
+    
     return (
         <div className ='insideContent'>
             
              {posts.map(post =>(
-                     <div className='content-card'>
+                     <div className='content-card'  >
                       <div className='content-button'>
-                    <button className='edit-card'>edit</button>
                     <button className='delete-card' onClick={()=>deletCard(post.id)}>delete</button>
                 </div>
-                     <div className='card-title'>
-                         <h2 key={post.id}>Карта {post.id}</h2>
-                     </div>
-                     <div className='word-origin'>
+              
+                <EditCard  id={post.id} wordName={post.wordName} wordTranslate={post.wordTranslate} ></EditCard>
+  
+                 <ul className='content-card'>
+                 <li className='card-title'>
+                         <h2>Карта </h2>
+                     </li>
+                     <li className='word-origin'>
                          <p>{post.wordName}</p>
-                     </div>
-                     <div className= 'word-translation'>
+                     </li>
+                     <li className= 'word-translation'>
                          <p>{post.wordTranslate}</p>
-                     </div>
-                     </div>
+                     </li>
+                 </ul>
+                 </div>
              ))}
+              <div className='btn-ShowmoreCards'>
+                     <button onClick={()=>addMoreCards()}>
+                     Show more Cards
+                     </button>
+                 </div>
         </div>
     )
 }

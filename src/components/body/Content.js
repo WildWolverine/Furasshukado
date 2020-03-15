@@ -2,9 +2,10 @@ import React from 'react'
 import './Content.css'
 import axios from 'axios'
 import AxiosGetContent from './AxiosGetContent'
+
 function Content() {
     
-
+   
     return (
        <div className='wrap-content'> 
             <nav className='content-title'>  
@@ -21,7 +22,6 @@ function Content() {
 
                <React.Fragment>
                    <AxiosGetContent>
-                       
                    </AxiosGetContent>
                </React.Fragment>
 
@@ -34,4 +34,4 @@ function Content() {
     )
 }
 
-export default Content
+export default Content;
