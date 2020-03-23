@@ -1,6 +1,7 @@
-import React, {useState,useEffect,useRef} from 'react'
+import React, {useState,useEffect} from 'react'
 import axios from 'axios'
 import EditCard from './EditCard'
+
 
 
 function AxiosGetContent() {
@@ -44,7 +45,6 @@ function AxiosGetContent() {
                 </div>
               
                 <EditCard  id={post.id} wordName={post.wordName} wordTranslate={post.wordTranslate} ></EditCard>
-  
                  <ul className='content-card'>
                  <li className='card-title'>
                          <h2>Карта </h2>

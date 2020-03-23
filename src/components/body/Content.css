@@ -28,7 +28,7 @@ ul li{
     float: left;
 }
 
-ul li a{
+ul li {
     display: table-cell;
     height: 80px;
     padding: 0 30px;
@@ -92,4 +92,19 @@ ul li a:hover{
     background-color: #212A80;
     border-radius: 12px;
     
+}
+.addBtn  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.addBtn button{
+    width: 120px;
+    height: 60px;
+    letter-spacing: 1px;
+    font-family: 'Heebo', sans-serif;
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
 }

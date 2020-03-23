@@ -3,15 +3,22 @@ import './App.css';
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer';
 import Content from './components/body/Content';
-import AddModal from './components/popUp/AddModal';
-
+import RepetitionTraining from './components/body/RepetitionTraining'
+import EndWorld from './components/body/EndWorld'
+import RepeatWords from './components/body/RepeatWords'
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 function App() {
   return (
     <div>
-      <AddModal/>
-      <Header/>
-      <Content/>
+       <Router>
+      <Switch>
+      <Route path="/" exact component={Content} />
+      <Route path="/" exact component={Header} />
+      <Route path="/повторения слов" component={RepeatWords} />
+      <Route path="/тренеровка повторения слов" component={RepetitionTraining}/>
+      </Switch>
       <Footer/>
+      </Router>
     </div>
    
   );

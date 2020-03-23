@@ -7,4 +7,12 @@
     font-family: 'Squada One', cursive;
     margin: 10px;
 }
+.header h1{
+    color:#212A80;
+   border-bottom: none;
+}
+.header h1 a {
+    color:#212A80;
+}
+
 

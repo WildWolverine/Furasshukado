@@ -1,24 +1,30 @@
 import React from 'react'
 import './Content.css'
-import axios from 'axios'
+import AddModal from '../popUp/AddModal'
 import AxiosGetContent from './AxiosGetContent'
+import {Link} from 'react-router-dom'
 
 function Content() {
-    
-   
+
+
     return (
+       <div>
        <div className='wrap-content'> 
             <nav className='content-title'>  
                <ul>
-                   <li> <a href='#'>Мой Словарь</a></li>
-                   <li> <a href='#'>Режим изучения слов</a></li>
-                   <li><a href='#'>Режим повторения слов</a></li>
+                   <Link to="/">
+                   <li>Мой Словарь</li>
+                   </Link>
+                   <Link to="/повторения слов">
+                   <li>Режим повторения слов</li>
+                   </Link> 
                </ul>
             </nav>
-       
+        </div>
+        
+        <AddModal/>
+      
         <div className='content'>
-          
-               
 
                <React.Fragment>
                    <AxiosGetContent>

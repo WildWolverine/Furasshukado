@@ -20,19 +20,18 @@ function AddModal() {
       console.log(err)
     })
   }
-  const modalRef = useRef()
-
-    const openModal = () =>{
-     modalRef.current.openModal()
-    }
+   const modalRef = useRef()
+   const openModal = () =>{
+    modalRef.current.openModal()
+   }
     return(
   <div>
    
-    <div className='btnOpen'>
+  
+   <div className='btnOpen'>
       <button onClick={openModal}>+</button>
     </div>
-
-      <Modal ref={modalRef}>
+      <Modal ref={modalRef} openModal>
         <form onSubmit={handleSubmit}>
           <div className='textInput'>
             <input type='text' placeholder='Слово' name='wordName' value={cardRequest.wordName} onChange={handleChange}></input>
