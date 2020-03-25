@@ -1,12 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Content.css'
 import AddModal from '../popUp/AddModal'
 import AxiosGetContent from './AxiosGetContent'
 import {Link} from 'react-router-dom'
 
 function Content() {
-
-
     return (
        <div>
        <div className='wrap-content'> 
@@ -27,8 +25,7 @@ function Content() {
         <div className='content'>
 
                <React.Fragment>
-                   <AxiosGetContent>
-                   </AxiosGetContent>
+                   <AxiosGetContent/>
                </React.Fragment>
 
                

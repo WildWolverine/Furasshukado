@@ -16,6 +16,7 @@ function App() {
       <Route path="/" exact component={Header} />
       <Route path="/повторения слов" component={RepeatWords} />
       <Route path="/тренеровка повторения слов" component={RepetitionTraining}/>
+      <Route path="/" exact component={EndWorld} />
       </Switch>
       <Footer/>
       </Router>

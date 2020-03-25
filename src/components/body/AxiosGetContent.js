@@ -1,19 +1,20 @@
 import React, {useState,useEffect} from 'react'
 import axios from 'axios'
 import EditCard from './EditCard'
-
+import LoadingRepetitionTreining from './LoadingRepetitionTraining'
 
 
 function AxiosGetContent() {
     
     const [posts, setPosts] = useState([])
-   
+    let [isLoading, setLoading] = useState(true)
      useEffect(() => {
         
         axios.get(`/${posts.length}`)
            .then(res=> {
                let posts = res.data
                setPosts(posts)
+               setLoading(false)
            })
            .catch(err=> console.log(err))
     },[])
@@ -36,9 +37,9 @@ function AxiosGetContent() {
     }
     
     return (
-        <div className ='insideContent'>
-            
-             {posts.map(post =>(
+        <div>
+            {isLoading ? <LoadingRepetitionTreining/> : <div className ='insideContent'>
+            {posts.map(post =>(
                      <div className='content-card'  >
                       <div className='content-button'>
                     <button className='delete-card' onClick={()=>deletCard(post.id)}>delete</button>
@@ -63,6 +64,8 @@ function AxiosGetContent() {
                      Show more Cards
                      </button>
                  </div>
+                </div>}
+             
         </div>
     )
 }
