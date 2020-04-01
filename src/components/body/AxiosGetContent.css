@@ -1,0 +1,100 @@
+
+.content{
+    width: 70vmax;
+    height: 24em;
+    margin-top: 0.4em;
+    position: relative;
+    background-color: rgb(196, 173, 173);
+    left: 12.5em;
+    padding: 10px;
+    overflow-y: scroll;
+    display: inline-flex;
+    border-radius: 12px;
+    opacity: 0.98;   
+}
+
+.container-button {
+    display: inline-flex;
+    float: right;
+}
+
+.btn-ShowmoreCards button{
+    border: none;
+    margin: 0.95em;
+    padding: 5px;
+    font-family: 'Heebo', sans-serif;
+    border-radius: 4px;
+    background-color: rgba(238, 230, 230, 0.945);
+    cursor: pointer;
+}
+.content-card{
+    display: inline-block;
+    margin:1em 0.4em 1em 1em;
+    padding: 0.2em 1em 1em 1em;
+    background-color: rgb(238, 230, 230);
+    border-radius: 12px;
+}
+.card-title{
+   padding: 5px;
+   font-family: 'Heebo', sans-serif;
+   font-size: 18px;
+   color:  #A52A2A;
+}
+.word-origin{
+    padding: 5px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    color: #A52A2A; 
+}
+.word-translation{
+    padding: 5px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    color: #A52A2A;
+}
+
+@media screen and (max-width:1200px){
+    .content{
+        width: 75vw;
+        height: 24em;
+    }
+    .content-card{
+        margin:1em 0.5em 1em 1.2em;
+        padding: 0.4em 1em 1em 1em;
+    }
+}
+@media screen and (max-width:900px){
+    .content{
+        width: 80vmin;
+        height: 24em;
+    }
+    .content-card{
+        margin:1em 0.8em 1em 1.2em;
+        padding: 0.4em 1em 1em 1em;
+    }
+}
+@media screen and (max-width:800px){
+    .content{
+        width: 68vmin;
+        height: 24em;
+        padding: 5px;
+        left: 12.45em;
+    }
+    .content-card{
+        margin:1em 0.3em 1em 2.3em;
+        padding: 0.4em 2em 1em 1.2em;
+    }
+}
+
+@media screen and (max-width:700px){
+    .content{
+        width: 50vmax;
+        height: 24em;
+        padding: 5px;
+        left: 11.5em;
+    }
+    .content-card{
+        margin:1em 0.4em 1em 5.50em;
+        padding: 0.4em 2em 1em 1.2em;
+    }    
+}

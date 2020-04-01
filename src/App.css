@@ -1,10 +1,10 @@
-*{
+* {
     margin: 2px;
 }
-body{
-    background-color: #FFFFF6;
+body {
+    background: url('https://www.clipart1001.com/wp-content/uploads/2019/01/Bird-On-A-Branch-Clipart-Tree-Love-Drwn.jpg');
+    background-repeat: no-repeat;
+    background-size: 60em 60em ;
     width: 100%;
     height: 100%;
-
-   
 }

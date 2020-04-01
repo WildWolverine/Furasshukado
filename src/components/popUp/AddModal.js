@@ -1,7 +1,7 @@
 import React,{useState,useRef} from 'react';
 import Modal from './Modal';
 import axios from 'axios'
-
+import '../body/Content.css'
 function AddModal() {
   const [cardRequest, setCardRequest] = useState({wordName:'',wordTranslate:''})
 

@@ -1,15 +1,14 @@
 import React, {useState,useEffect} from 'react'
 import axios from 'axios'
 import EditCard from './EditCard'
+import './AxiosGetContent.css'
 import LoadingRepetitionTreining from './LoadingRepetitionTraining'
 
-
 function AxiosGetContent() {
-    
     const [posts, setPosts] = useState([])
     let [isLoading, setLoading] = useState(true)
-     useEffect(() => {
-        
+
+     useEffect(() => {  
         axios.get(`/${posts.length}`)
            .then(res=> {
                let posts = res.data
@@ -28,7 +27,6 @@ function AxiosGetContent() {
            })
            .catch(err => {
                console.log(err)
-
            })
        }
     }
@@ -37,34 +35,33 @@ function AxiosGetContent() {
     }
     
     return (
-        <div>
+        <div className='container'>
             {isLoading ? <LoadingRepetitionTreining/> : <div className ='insideContent'>
             {posts.map(post =>(
-                     <div className='content-card'  >
-                      <div className='content-button'>
-                    <button className='delete-card' onClick={()=>deletCard(post.id)}>delete</button>
+                <div className='content-card'>
+                     <div className='container-button'>
+                             <EditCard  id={post.id} wordName={post.wordName} wordTranslate={post.wordTranslate} ></EditCard>
+                             <img src='https://cdn1.iconfinder.com/data/icons/pixel-perfect-at-16px-volume-1/16/5009-512.png' width='17px' height='19px' onClick={()=>deletCard(post.id)}></img>
+                     </div>
+                    <div className='content-card-content'>
+                         <div className='card-title'>
+                             <h2>Карта </h2>
+                         </div>
+                         <div className='word-origin'>
+                             <p>{post.wordName}</p>
+                         </div>
+                         <div className= 'word-translation'>
+                             <p>{post.wordTranslate}</p>
+                        </div>
+                     </div>
                 </div>
-              
-                <EditCard  id={post.id} wordName={post.wordName} wordTranslate={post.wordTranslate} ></EditCard>
-                 <ul className='content-card'>
-                 <li className='card-title'>
-                         <h2>Карта </h2>
-                     </li>
-                     <li className='word-origin'>
-                         <p>{post.wordName}</p>
-                     </li>
-                     <li className= 'word-translation'>
-                         <p>{post.wordTranslate}</p>
-                     </li>
-                 </ul>
-                 </div>
              ))}
-              <div className='btn-ShowmoreCards'>
+                <div className='btn-ShowmoreCards'>
                      <button onClick={()=>addMoreCards()}>
-                     Show more Cards
+                        Показать еще 
                      </button>
-                 </div>
-                </div>}
+                </div>
+            </div>}
              
         </div>
     )

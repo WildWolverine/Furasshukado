@@ -40,7 +40,7 @@ function EditCard(id,wordName,wordTranslate) {
   <div>
       
      <div>
-          <button className='edit-card' onClick={openEditCardModal}>edit</button>
+       <img src='https://image.flaticon.com/icons/png/512/61/61456.png' width='12px' height='14px' onClick={openEditCardModal}></img>
      </div>
       <Modal ref={modalRef}>
         <form onSubmit={handleSubmit}>

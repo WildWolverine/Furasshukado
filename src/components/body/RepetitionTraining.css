@@ -1,0 +1,201 @@
+#container{
+    margin: 100px;
+}
+
+#container-training{
+    width: 50vw;
+    height: 60vh;
+    background-color: rgb(196, 173, 173);
+    border-radius: 12px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    opacity: 0.98;
+}
+.container-trainingCard{
+    width: 38vw;
+    height: 43vh;
+    background-color: rgb(238, 230, 230);
+    margin: 0 auto;
+    border-radius: 11px;
+}
+.container-trainingCard p{
+    font-family: 'Heebo', sans-serif;
+    font-size: 3vw;
+    margin: 2em 5em 1.2em 5em;
+}
+.button button{
+    display: inline;
+    margin: 1em 3em 2em 3.5em; 
+    background-color: rgb(209, 183, 183);
+    border: 2px solid rgb(177, 162, 162) ;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nextCard{
+    width: 11vw;
+    height: 5vh;
+}
+.repeat{
+    width: 11vw;
+    height: 5vh;
+}
+
+@media screen and (max-width:1200px){
+    .container-trainingCard p{
+        margin: 2em 5em
+    }
+    .button button{
+        margin: 1em 2.9em;
+    }
+}
+@media screen and (max-width:1100px){
+    .container-trainingCard p{
+        margin: 2em 5em
+    }
+    .button button{
+        margin: 1em 2.8em;
+    }
+}
+@media screen and (max-width:1200px){
+    .container-trainingCard p{
+        margin: 2em 5em
+    }
+    .button button{
+        margin: 1em 2.9em;
+    }
+}
+
+@media screen and (max-width:1090px){
+    .container-trainingCard p{
+        margin: 2em 4.5em
+    }
+    .button button{
+        margin: 1em 2.5em;
+        padding: 0.2em;
+    }
+    .nextCard{
+        width: 11vw;
+        height: 6vh;
+    }
+    .repeat{
+        width: 11vw;
+        height: 6vh;
+    }
+}
+@media screen and (max-width:1000px){
+    .container-trainingCard p{
+        margin: 2em 4.5em
+    }
+    .button button{
+        margin: 1em 2em;
+        padding: 0.2em;
+    }
+    .nextCard{
+        width: 12vw;
+        height: 6vh;
+    }
+    .repeat{
+        width: 12vw;
+        height: 6vh;
+    }
+}
+@media screen and (max-width:900px){
+    .container-trainingCard p{
+        margin: 2em 3.5em;
+        font-size: 4vw;
+    }
+    .button button{
+        margin: 1em 1.7em;
+        padding: 0.3em;
+        font-size: 14px;
+    }
+    .nextCard{
+        width: 13vw;
+        height: 6vh;
+    }
+    .repeat{
+        width: 13vw;
+        height: 6vh;
+    }
+}
+@media screen and (max-width:850px){
+    .container-trainingCard p{
+        margin: 2.5em 4em;
+        font-size: 3.5vw;
+    }
+    .button button{
+        margin: 1em 1.3em;
+        padding: 0.3em;
+        font-size: 14px;
+    }
+    .nextCard{
+        width: 14vw;
+        height: 6vh;
+    }
+    .repeat{
+        width: 14vw;
+        height: 6vh;
+    }
+}
+@media screen and (max-width:780px){
+    .container-trainingCard p{
+        margin: 2.5em 4em;
+        font-size: 3.5vw;
+    }
+    .button button{
+        margin: 1em 1em;
+        padding: 0.3em;
+        font-size: 14px;
+    }
+    .nextCard{
+        width: 15vw;
+        height: 7vh;
+    }
+    .repeat{
+        width: 15vw;
+        height: 7vh;
+    }
+}
+@media screen and (max-width:746px){
+    .container-trainingCard p{
+        margin: 2.5em 4em;
+        font-size: 3.6vw;
+    }
+    .button button{
+        margin: 1em 0.8em;
+        padding: 0.3em;
+        font-size: 14px;
+    }
+    .nextCard{
+        width: 15vw;
+        height: 7vh;
+    }
+    .repeat{
+        width: 15vw;
+        height: 7vh;
+    }
+}
+@media screen and (max-width:600px){
+    .container-trainingCard p{
+        margin: 2.5em 3.5em;
+        font-size: 3.8vw;
+    }
+    .button button{
+        margin: 0.7em 4em;
+        padding: 0.3em;
+        font-size: 14px;
+    }
+    .nextCard{
+        width: 17vw;
+        height: 7vh;
+    }
+    .repeat{
+        width: 17vw;
+        height: 7vh;
+    }
+}
+
+

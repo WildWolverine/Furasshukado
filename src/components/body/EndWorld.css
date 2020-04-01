@@ -1,0 +1,40 @@
+
+.endWord-content{
+    width: 38vw;
+    height: 43vh;
+    background-color: rgb(238, 230, 230);
+    margin: 0 auto;
+    border-radius: 11px;
+}
+.keywordsPage{
+    margin: 1vw 7vw;
+    padding: 5vw;
+}
+
+.end-word{
+    margin-left: 1.5em;
+    margin-bottom: 1.4em;
+    font-family: 'Heebo', sans-serif;
+    font-size: 40px;
+}
+.keywordsPage button{
+    width: max-content;
+    height: max-content;
+    margin-left: -1em;
+    padding: 10px;
+    background-color: rgb(209, 183, 183);
+    border: 2px solid rgb(177, 162, 162) ;
+    font-family: 'Heebo', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .end-word{
+        margin: 1em;
+    }
+    .keywordsPage button{
+        margin-left: -3em;
+        padding: 10px;
+    }
+}

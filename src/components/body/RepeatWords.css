@@ -1,0 +1,18 @@
+
+.btn-start {
+    width: 350px;
+    height: 40%;
+    margin: 0 auto;
+}
+.start{
+    width: 14em;
+    height: 5em;
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    font-weight: 549;
+    border: 2px solid rgb(214, 204, 204) ;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(238, 230, 230);
+}

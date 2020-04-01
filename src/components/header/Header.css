@@ -1,18 +1,58 @@
 .header{
-    width: 500px;
-    height: 100px;
+    width: 100vw;
+    height: 30%;
     display: table-cell;
     vertical-align: middle;
     position: relative;
     font-family: 'Squada One', cursive;
-    margin: 10px;
+    margin: 2%;
 }
 .header h1{
-    color:#212A80;
-   border-bottom: none;
-}
-.header h1 a {
-    color:#212A80;
+    color:#A52A2A;
 }
 
+nav{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+nav:before{
+content: '';
+display: block;
+border-radius: 15px;
+background:#50C878;
+height: 83px;
+width: 100%;
+position: absolute;
+z-index: -1;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 80px;
+}
+
+ul li{
+    float: left;
+}
+
+ul li {
+    height: 80px;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 70px;
+    letter-spacing: 1px;
+    color: #FFFFF6;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+ul li a:hover{
+    border-radius: 15px;
+}
 

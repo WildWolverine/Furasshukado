@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Header from './components/header/Header'
-import Footer from './components/footer/Footer';
 import Content from './components/body/Content';
 import RepetitionTraining from './components/body/RepetitionTraining'
 import EndWorld from './components/body/EndWorld'
@@ -18,7 +17,6 @@ function App() {
       <Route path="/тренеровка повторения слов" component={RepetitionTraining}/>
       <Route path="/" exact component={EndWorld} />
       </Switch>
-      <Footer/>
       </Router>
     </div>
    

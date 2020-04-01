@@ -1,36 +1,19 @@
-import React,{useState} from 'react'
-import './Content.css'
+import React from 'react'
 import AddModal from '../popUp/AddModal'
 import AxiosGetContent from './AxiosGetContent'
-import {Link} from 'react-router-dom'
+import Header from '../header/Header'
+
 
 function Content() {
     return (
        <div>
-       <div className='wrap-content'> 
-            <nav className='content-title'>  
-               <ul>
-                   <Link to="/">
-                   <li>Мой Словарь</li>
-                   </Link>
-                   <Link to="/повторения слов">
-                   <li>Режим повторения слов</li>
-                   </Link> 
-               </ul>
-            </nav>
-        </div>
-        
-        <AddModal/>
+           <Header/>
+            <AddModal/>
       
-        <div className='content'>
-
-               <React.Fragment>
+            <div className='content'>
+                <React.Fragment>
                    <AxiosGetContent/>
-               </React.Fragment>
-
-               
-           
-            
+                </React.Fragment>
             </div>
         </div>
         

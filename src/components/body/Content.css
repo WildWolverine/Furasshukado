@@ -1,111 +1,14 @@
-
-
-nav{
-    margin: 0 auto;
-    position: relative;
-    max-width: 100%;
-}
-
-nav:before{
-content: '';
-display: block;
-border-radius: 15px;
-background:#212A9C;
-height: 83px;
-width: 100%;
-position: absolute;
-z-index: -1;
-}
-
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    height: 80px;
-}
-
-ul li{
-    float: left;
-}
-
-ul li {
-    display: table-cell;
-    height: 80px;
-    padding: 0 30px;
-    text-decoration: none;
-    line-height: 70px;
-    letter-spacing: 1px;
-    color: #FFFFF6;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-}
-
-ul li a:hover{
-    background: #212A80;
-    border-radius: 15px;
-}
-
-.content{
-    width: 1000px;
-    height: 500px;
-    margin: 25px;
-    position: relative;
-    display: inline-block;
-    left: 140px;
-    border: 3px solid #212A80;
-    padding: 10px;
-    overflow-y: scroll;
-}
-
-.content-card{
-    background: #FFF8FF;
-    border-radius: 12px;
-    width: max-content;
-    height: max-content;
-    border:2px solid #212A80;
-    float: left;
-    margin-right: 35px;
-    margin-bottom: 15px;
-}
-.card-title{
-   padding: 5px;
-   font-family: 'Heebo', sans-serif;
-   font-size: 18px;
-   color: #FFFFF6;
-   background-color: #212A80;
-   border-radius: 12px;
-  
-}
-.word-origin{
-    padding: 5px;
-    font-family: 'Heebo', sans-serif;
-    font-size: 20px;
-    color: #FFFFF6;
-    background-color: #212A80;
-    border-radius: 12px;
-   
-}
-.word-translation{
-    padding: 5px;
-    font-family: 'Heebo', sans-serif;
-    font-size: 20px;
-    color: #FFFFF6;
-    background-color: #212A80;
-    border-radius: 12px;
-    
-}
-.addBtn  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btnOpen{
     position: absolute;
 }
-.addBtn button{
-    width: 120px;
-    height: 60px;
-    letter-spacing: 1px;
-    font-family: 'Heebo', sans-serif;
-    border-radius: 7px;
-    padding: 5px;
+.btnOpen button{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: lighter;
     cursor: pointer;
+    font-size: 90px;
+    color: #FFFFF6;
+    background-color: rgb(75, 184, 111)
 }
